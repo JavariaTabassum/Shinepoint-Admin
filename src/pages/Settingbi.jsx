@@ -1,10 +1,7 @@
 import React, { useState } from 'react';
 import Sidebar from '../components/Sidebar';
 import Navbar from '../components/Navbar';
-import Welcome from '../components/Welcome';
-import Charts from '../components/Charts';
 import { FaBars } from 'react-icons/fa';
-import WorkoutSection from '../components/Workoutsection';
 import Settingb from '../components/Settingb';
 
 const Settingbi = () => {
@@ -63,7 +60,6 @@ const Settingbi = () => {
         <Navbar />
       </div>
 
-      {/* Main Content (Sidebar + Content) */}
       <div className="flex flex-1">
         {/* Sidebar */}
         <div className="fixed  h-screen zindex2">
@@ -72,8 +68,7 @@ const Settingbi = () => {
 
         {/* Main Section */}
         <div className="flex-1 flex flex-col w-full ml-0">
-          {/* Menu Icon for Smaller Screens */}
-          {!isSidebarVisible && (  // Hide menu icon when sidebar is visible
+          {!isSidebarVisible && (  
             <button
               className="menu-icon mt-7 ml-4 text-2xl text-black width2"
               onClick={toggleSidebar}
@@ -84,9 +79,7 @@ const Settingbi = () => {
 
           {/* Page Content */}
           <div className="px-8 mt-[100px] ml-[320px] margin m zindex" >
-            {/* Content Goes Here */}
-            <Settingb />
-            
+            <Settingb /> 
           </div>
         </div>
       </div>

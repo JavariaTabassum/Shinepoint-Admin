@@ -1,4 +1,5 @@
 import React from 'react';
+import Usertableimg from '../images/usertableimg.png';  
 
 const UserDetail = ({ user, onBack }) => {
     return (
@@ -11,11 +12,11 @@ const UserDetail = ({ user, onBack }) => {
                 <div className="flex">
                     {/* Left Section */}
                     <div className="flex flex-col items-start w-1/2">
-                        <div className='flex flex-col relative items-center ml-5'>
+                        <div className='flex flex-col relative items-center ml-5 object-cover'>
                             <img
-                                src="https://via.placeholder.com/100"
+                                src={Usertableimg}
                                 alt="Profile"
-                                className="rounded-full w-24 h-24 border-4 border-purple-300"
+                                className="rounded-full w-[120px] h-[120px] border-4"
                             />
                             <span className="text-xs bg-[#CD44EF26] text-[#CD44EF] rounded-full px-3 py-1 absolute left-[100px]">
                                 {user.status || 'SUBSCRIBER'}
@@ -137,7 +138,7 @@ const UserDetail = ({ user, onBack }) => {
                 <div className="flex justify-end gap-3 mt-6">
                     <button
                         className=" text-[#CD44EF] py-2 px-6 rounded-lg border border-[#CD44EF]"
-                        onClick={onBack} // Ensure this calls the parent component's onBack function
+                        onClick={onBack} 
                     >
                         Back
                     </button>

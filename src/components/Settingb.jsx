@@ -7,10 +7,11 @@ import Key from '../images/key.png';
 import Pencil from '../images/Pencil.png';
 import QM from '../images/qm.png';
 import I from '../images/I.png';
+import User from '../images/userimg.jpg';
 
 const Settingb = () => {
     const navigate = useNavigate();
-
+    
     const handleProfileClick = () => {
       navigate("/settingpwd"); 
     };
@@ -119,7 +120,7 @@ const Settingb = () => {
                         <div className="absolute bottom-2 left-8 flex items-center">
                             <div className="relative">
                                 <img
-                                    src="https://via.placeholder.com/100" 
+                                    src={User}
                                     alt="Profile"
                                     className="w-24 h-24 rounded-full border-4 border-[#8B909F] shadow-lg"
                                 />

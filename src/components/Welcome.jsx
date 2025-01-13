@@ -1,4 +1,5 @@
 import React from 'react';
+import Dashimg from '../images/Dashimg.jpg';
 
 const Welcome = () => {
   return (
@@ -36,11 +37,11 @@ const Welcome = () => {
             align-items: start;
             }
             }
-             @media (max-width: 1050px){
-                .mgt{
+            @media (max-width: 1050px){
+            .mgt{
                 margin-top: 20px;
-                }
-                }
+              }
+              }
             `}
         </style>
       {/* Header Section */}
@@ -99,8 +100,8 @@ const Welcome = () => {
             </div>
             <div className="flex flex-col gap-5 items-start">
               <img
-                className="w-[100px] h-[100px] rounded-full mr-4"
-                src="https://via.placeholder.com/150"
+                className="w-[100px] h-[100px] rounded-full mr-4 object-cover"
+                src={Dashimg}
                 alt="User Avatar"
               />
               <div>
@@ -130,8 +131,8 @@ const Welcome = () => {
             </div>
             <div className="flex flex-col gap-5 items-start">
               <img
-                className="w-[100px] h-[100px] rounded-full mr-4"
-                src="https://via.placeholder.com/150"
+                className="w-[100px] h-[100px] rounded-full mr-4 object-cover"
+                src={Dashimg}
                 alt="User Avatar"
               />
               <div>

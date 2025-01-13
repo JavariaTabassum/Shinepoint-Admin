@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import logo from '../images/logo.png';
 import Bell from '../images/bell.png';
 import Cart from '../images/cart.png';
+import User from '../images/userimg.jpg';
 import { useNavigate } from "react-router-dom";
 import { FaChevronDown, FaSearch, FaTimes, FaEllipsisV } from 'react-icons/fa';
 
@@ -77,7 +78,7 @@ const Navbar = () => {
         <div className="flex items-center space-x-3 cursor-pointer"
          onClick={handleProfileClick} >
           <img
-            src="https://via.placeholder.com/40"
+            src={User}
             alt="Profile"
             className="w-10 h-10 rounded-full"
           />
@@ -153,7 +154,7 @@ const Navbar = () => {
           <div className="flex items-center space-x-3"
            onClick={handleProfileClick} >
             <img
-              src="https://via.placeholder.com/40"
+              src={User}
               alt="Profile"
               className="w-10 h-10 rounded-full"
             />
