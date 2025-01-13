@@ -1,5 +1,6 @@
 import React from 'react';
 import Dashimg from '../images/Dashimg.jpg';
+import Lite from '../images/liteicon.png';
 
 const Welcome = () => {
   return (
@@ -65,8 +66,8 @@ const Welcome = () => {
         <div className="space-y-7">
           {/* Lite Gym Plan */}
           <div className="flex  items-center bg-[rgba(197,241,55,1)] rounded-lg py-12 px-6 shadow-md">
-            <div className="flex items-center justify-center bg-black text-white w-10 h-10 rounded-full">
-              <span>🏋️‍♂️</span>
+            <div className="flex items-center justify-center bg-[#01010126]  w-12 h-12 rounded-full">
+              <span><img src={Lite} alt="" /></span>
             </div>
             <div className="ml-4">
               <h2 className="text-lg font-medium">Lite Gym Plan</h2>
@@ -76,8 +77,8 @@ const Welcome = () => {
 
           {/* Premium Gym Plan */}
           <div className="flex items-center bg-[rgba(254,215,132,0.8)] rounded-lg py-12 px-6 shadow-md">
-            <div className="flex items-center justify-center bg-black text-white w-10 h-10 rounded-full">
-              <span>🏋️‍♀️</span>
+            <div className="flex items-center justify-center bg-[#043E4426]   w-12 h-12 rounded-full">
+              <span><img src={Lite} alt="" /></span>
             </div>
             <div className="ml-4">
               <h2 className="text-lg font-medium">Premium Gym Plan</h2>
