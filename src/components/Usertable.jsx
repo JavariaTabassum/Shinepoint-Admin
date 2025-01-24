@@ -4,7 +4,8 @@ import { FaChevronDown, FaSearch } from 'react-icons/fa';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye, faTrash } from "@fortawesome/free-solid-svg-icons";
 import Bricks from '../images/Bricks.png';
-import UserDetail from './UserDetail';  
+import UserDetail from './UserDetail';
+
 
 const UserTable = () => {
     const [selectedUser, setSelectedUser] = useState(null); 
@@ -50,7 +51,6 @@ const UserTable = () => {
                 }
                 `}
             </style>
-            {/* Main Content (Background) */}
             <div className='flex gap-5 mb-9 mgt'>
                 <img src={Bricks} alt="" />
                 <h2 className='font-poppins font-semibold text-2xl'>User List</h2>
@@ -117,7 +117,7 @@ const UserTable = () => {
             </div>
 
             {selectedUser && (
-                <div className="fixed inset-0 flex items-center justify-center z-50">
+                <div className="fixed inset-0 flex  justify-center z-50">
                     <div className="fixed inset-0 bg-black bg-opacity-50"></div>
                     <div className="z-50">
                         <UserDetail user={selectedUser} onBack={handleBack} />

@@ -10,6 +10,7 @@ import Video from './pages/Video';
 import NewWorkout from './pages/NewWorkout';
 import Subscription from './pages/Subscription';
 import Chat from './pages/Chat';
+import DietPlan from './pages/DietPlan';
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
     <Route path="/newworkout" element={<NewWorkout />} />
     <Route path="/subscription" element={<Subscription />} />
     <Route path="/chat" element={<Chat />} />
+    <Route path="/dietplan" element={<DietPlan />} />
     </Routes>
   );
 }

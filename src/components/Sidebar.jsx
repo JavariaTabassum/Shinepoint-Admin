@@ -2,7 +2,10 @@ import React from 'react';
 import DB from '../images/db.png';
 import UR from '../images/ur.png';
 import SB from '../images/sb.png';
-import SM from '../images/all.png';
+import BXS from '../images/bxs_videos.png';
+import CT from '../images/chat.png';
+import WO from '../images/Wk.png';
+import Diet from '../images/Diet.png';
 import { FaTimes, FaSearch } from 'react-icons/fa';
 import { NavLink, useLocation } from 'react-router-dom';
 
@@ -13,9 +16,10 @@ const Sidebar = ({ isSidebarVisible, toggleSidebar }) => {
     { path: '/dashboard', name: 'Dashboard', icon: DB },
     { path: '/user', name: 'Users', icon: UR },
     { path: '/subscription', name: 'Subscription', icon: SB },
-    { path: '/video', name: 'Video', icon: SM },
-    { path: '/workout', name: 'Workout', icon: SM },
-    { path: '/chat', name: 'Chat', icon: SM },
+    { path: '/video', name: 'Video', icon: BXS },
+    { path: '/workout', name: 'Workout', icon: WO },
+    { path: '/chat', name: 'Chat', icon: CT },
+    { path: '/dietplan', name: 'Diet', icon: Diet },
   ];
 
   return (
